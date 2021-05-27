@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles/schedule.css">
+    <title>SCHEDULE</title>
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <header>
+        <div class="leftHead">
+            <h2>CUBE <span class="headTittlePart">HACKS I</span></h2>
+        </div>
+        <div class="rightHead">
+            <ul>
+
+                <li><a href="index">HOME</a></li>
+                <li><a>SCHEDULE</a></li>
+                <li><a>TEAM</a></li>
+                <li><a>ABOUT</a></li>
+                <li><button onclick="myShow()" class="menuIcon"><i class="fas fa-bars "></i></button></li>
+            </ul>
+        </div>
+
+    </header>
+    <section class="responsiveMenu" id="menuBtn">
+        <ul>
+
+            <li><a href="index">HOME</a></li>
+            <li><a>SCHEDULE</a></li>
+            <li><a>TEAM</a></li>
+            <li><a>ABOUT</a></li>
+        </ul>
+    </section>
+    <!-- HEADER END -->
+
+
+
+    <!-- SCHEDULE START -->
+
+    <h1 class="scheduleTittle">SCHEDULE</h1>
+    <div class="calenderVector">
+        <img src="/assets/Images/calender.svg" alt="calender" />
+    </div>
+    <div class="scheduleSection">
+
+        <div class="container">
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="timelineContent">
+                            <h2 class="date">16 June, 2021</h2>
+                            <h1>Machine Learning</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, iure! Sit aut ducimus
+                                reprehenderit, libero impedit dolore, earum, possimus accusamus rem at corrupti</p>
+                            <button class="knowMoreButton">Know More</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timelineContent">
+                            <h2 class="date">08 July, 2021</h2>
+                            <h1>Robotics and AI</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, iure! Sit aut ducimus
+                                reprehenderit, libero impedit dolore, earum, possimus accusamus rem at corrupti</p>
+                            <button class="knowMoreButton">Know More</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timelineContent">
+                            <h2 class="date">08 September, 2021</h2>
+                            <h1>COVID 19</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, iure! Sit aut ducimus
+                                reprehenderit, libero impedit dolore, earum, possimus accusamus rem at corrupti</p>
+                            <button class="knowMoreButton">Know More</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- SCHEDULE END -->
+
+    <!-- FOOTER START -->
+    <!-- FOOTER END -->
+
+    <script src="https://kit.fontawesome.com/c4b7891002.js" crossorigin="anonymous"></script>
+    <script>
+        function myShow() {
+            var menuButton = document.getElementById("menuBtn");
+            menuButton.classList.toggle("showMenu");
+        }
+    </script>
+</body>
+
+</html>
