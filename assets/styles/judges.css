@@ -1,0 +1,102 @@
+header
+{
+    color: #dfbfff;
+}
+header li:nth-child(2)
+{
+    color: #dfbfff;
+}
+.main
+{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    height: max-content;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 25%;    
+}
+
+.cards
+{
+    position: relative;
+    width: 250px;
+    height: 320px;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    background-color: white;    
+}
+
+.title
+{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+    color: white;
+    font-size: 3.5rem;
+}
+.jname
+{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;  
+}
+h3
+{
+    text-align: justify;
+}
+
+.rightc
+{
+    text-align: center;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+.leftc
+{
+    text-align: center;
+    margin-right: 100px;
+}
+
+.user
+{
+    top: -60px;
+    margin-left: 22%;
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    background-image: url("../Images/Judges/userbg.svg");
+    background-size: cover;
+}
+
+.ul
+{
+    margin-left: 510px;
+}
+
+.ur
+{
+    margin-right: 510px;
+}
+
+.li
+{
+    width: 20px;
+    height: 15px;
+    margin-left: 115px;
+    margin-top: 10px;
+    background-image: url(lin.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.r
+{
+    align-items: center;
+}
