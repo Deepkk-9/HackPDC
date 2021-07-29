@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/styles/schedule.css">
+    <link rel="stylesheet" href="/assets/styles/judges.css">
     <title>Judges</title>
 </head>
 
@@ -20,8 +21,8 @@
             <ul>
                 <li><a href="index">HOME</a></li>
                 <li><a href="schedule.html">SCHEDULE</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a style="color: white;" href="judges.html">JUDGES</a></li>
                 <li><button onclick="myShow()" class="menuIcon"><i class="fas fa-bars "></i></button></li>
             </ul>
         </div>
@@ -31,12 +32,43 @@
         <ul>
 
             <li><a href="index">HOME</a></li>
-            <li><a>SCHEDULE</a></li>
-            <li><a>TEAM</a></li>
-            <li><a>ABOUT</a></li>
-        </ul>
+            <li><a href="schedule.html">SCHEDULE</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="judges.html">JUDGES</a></li> </ul>
     </section>
     <!-- HEADER END -->
+
+    <!-- JUDGES Page Start -->
+    <h1 class="title">JUDGES</h1>
+
+    <div class="main">
+        <div class="cards ">
+            <div class="user"></div>
+            <h2 class="jname">Jayesh Patil</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates quidem architecto est
+                voluptate pariatur exercitationem sed ullam consequuntur. Rem odit necessitatibus excepturi unde
+                accusamus aliquid autem pariatur itaque alias.</h3>
+            <div class="li r"></div>
+        </div>
+
+        <div class="cards ">
+            <div class="user"></div>
+            <h2 class="jname">Sumit Dalvi</h2>
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam nesciunt eius tempora? Laudantium
+                accusantium nisi error molestias facere. Tempore, iste! Tempore asperiores officia adipisci quibusdam
+                odio repellendus porro, atque doloribus.</h3>
+            <div class="li l"></div>
+        </div>
+    </div>
+
+    <!-- JUDGES Page End -->
+    <script src="https://kit.fontawesome.com/c4b7891002.js" crossorigin="anonymous"></script>
+    <script>
+        function myShow() {
+            var menuButton = document.getElementById("menuBtn");
+            menuButton.classList.toggle("showMenu");
+        }
+    </script>
 </body>
 
 </html>
