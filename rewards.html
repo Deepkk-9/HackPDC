@@ -20,8 +20,8 @@
 
                 <li><a href="index">HOME</a></li>
                 <li><a href="schedule.html">SCHEDULE</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="judges.html">JUDGES</a></li>
                 <li><button onclick="myShow()" class="menuIcon"><i class="fas fa-bars "></i></button></li>
             </ul>
         </div>
@@ -29,11 +29,10 @@
     </header>
     <section class="responsiveMenu" id="menuBtn">
         <ul>
-
             <li><a href="index">HOME</a></li>
-            <li><a>SCHEDULE</a></li>
-            <li><a>TEAM</a></li>
-            <li><a>ABOUT</a></li>
+            <li><a href="schedule.html">SCHEDULE</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="judges.html">JUDGES</a></li>
         </ul>
     </section>
     <!-- HEADER END -->
@@ -43,6 +42,14 @@
 
     <!-- FOOTER START -->
     <!-- FOOTER END -->
+    <script src="https://kit.fontawesome.com/c4b7891002.js" crossorigin="anonymous"></script>
+    <script>
+        function myShow() {
+            var menuButton = document.getElementById("menuBtn");
+            menuButton.classList.toggle("showMenu");
+        }
+    </script>
 </body>
+
 
 </html>

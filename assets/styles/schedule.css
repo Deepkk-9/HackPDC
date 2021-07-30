@@ -65,9 +65,7 @@ header {
 .rightHead ul li:nth-child(4) {
   display: none;
 }
-.rightHead ul li:nth-child(2) a {
-  color: #fff;
-}
+
 .menuIcon {
   background: none;
   border: none;
