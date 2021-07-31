@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Monda&display=swap");
+
+:root {
+  --mainFontColor: #dfbfff;
+}
+body {
+  color: var(--mainFontColor);
+  font-family: "Monda", sans-serif;
+}
+.title {
+  text-align: center;
+  font-size: 3.6rem;
+}
+.rewards {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  grid-gap: 10px;
+}
+.prizes {
+  text-align: left;
+}
+.prizes h1 {
+  position: relative;
+  cursor: pointer;
+}
+.prizes h1::before {
+  content: " ";
+  position: absolute;
+  right: 20px;
+  top: 20%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: rgb(252, 252, 252);
+  clip-path: polygon(50% 0px, 100% 50%, 0px 50%);
+  transform: rotate(90deg);
+}
+
+.prizes ul {
+  list-style: none;
+  height: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.showPrize {
+  height: max-content;
+}
