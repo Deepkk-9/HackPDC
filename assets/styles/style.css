@@ -44,30 +44,30 @@ header {
   color: #66a3ff;
 }
 
-.rightHead ul {
+.rightHead nav {
   display: flex;
   justify-content: right;
   width: max-content;
   list-style: none;
 }
-.rightHead ul li a {
+.rightHead nav a {
   text-decoration: none;
   color: var(--mainFontColor);
 }
-.rightHead ul li {
+.rightHead nav {
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.rightHead ul li i {
+.rightHead nav button i {
   font-size: 40px;
   display: flex;
 }
-.rightHead ul li:nth-child(1),
-.rightHead ul li:nth-child(2),
-.rightHead ul li:nth-child(3),
-.rightHead ul li:nth-child(4) {
+.rightHead nav a:nth-child(1),
+.rightHead nav a:nth-child(2),
+.rightHead nav a:nth-child(3),
+.rightHead nav a:nth-child(4) {
   display: none;
 }
 
@@ -77,6 +77,28 @@ header {
   color: #fff;
   cursor: pointer;
 }
+
+.navItem {
+  position: relative;
+  /* padding: 10px; */
+}
+.navItem::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 3px;
+  left: 0;
+  width: 0;
+  bottom: -5px;
+  transition-duration: 0.4s;
+}
+.navItem:hover::after {
+  width: 100%;
+}
+.navItem:hover {
+  color: white;
+}
+
 .responsiveMenu {
   position: fixed;
   top: 60px;
@@ -117,17 +139,17 @@ header {
   .responsiveMenu {
     display: none;
   }
-  .rightHead ul {
+  .rightHead nav {
     width: 25rem;
     justify-content: space-between;
   }
-  .rightHead ul li:nth-child(1),
-  .rightHead ul li:nth-child(2),
-  .rightHead ul li:nth-child(3),
-  .rightHead ul li:nth-child(4) {
+  .rightHead nav a:nth-child(1),
+  .rightHead nav a:nth-child(2),
+  .rightHead nav a:nth-child(3),
+  .rightHead nav a:nth-child(4) {
     display: block;
   }
-  header .rightHead ul li i {
+  header .rightHead nav button i {
     display: none;
   }
 }

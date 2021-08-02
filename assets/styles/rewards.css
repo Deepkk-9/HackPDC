@@ -25,12 +25,15 @@ body {
   position: relative;
   cursor: pointer;
 }
+
 .prizes h1::before {
-  content: " ";
+  content: "";
   position: absolute;
-  right: 20px;
+  right: -30px;
   top: 20%;
-  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   background-color: rgb(252, 252, 252);
@@ -39,10 +42,9 @@ body {
 }
 
 .prizes ul {
+  visibility: hidden;
   list-style: none;
   height: 0;
-  overflow: hidden;
-  overflow-y: auto;
 }
 .showPrize {
   height: max-content;
