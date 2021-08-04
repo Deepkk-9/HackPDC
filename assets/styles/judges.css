@@ -6,44 +6,12 @@
     padding: 0%;
 }
 
-header
-{
-    color: #dfbfff;
-}
-
-header li:nth-child(2)
-{
-    color: #dfbfff;
-}
-
-.ul
-{
-    margin-left: 510px;
-}
-
-.ur
-{
-    margin-right: 510px;
-}
-
-.li
-{
-    width: 20px;
-    height: 15px;
-    margin-left: 115px;
-    margin-top: 10px;
-    background-image: url(lin.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-
 .title
 {
-    margin-top: 50px;
+    /* margin-top: 50px; */
     text-align: center;
     font-family: 'Monda', sans-serif;
-    color: white;
+    color: #dfbfff;
     font-size: 3.5rem;
 }
 
@@ -86,7 +54,7 @@ header li:nth-child(2)
 .cards .jname
 {
     font-family: Monda;
-    font-size: x-large;
+    font-size: 1.7em;
     font-weight: bolder;
     color: white;
 }
