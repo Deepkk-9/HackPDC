@@ -18,13 +18,13 @@
             <h2>CUBE <span class="headTittlePart">HACKS I</span></h2>
         </div>
         <div class="rightHead">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="schedule.html">SCHEDULE</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="judges.html">JUDGES</a></li>
-                <li><button onclick="myShow()" class="menuIcon"><i class="fas fa-bars "></i></button></li>
-            </ul>
+            <nav>
+                <a class="navItem" href="index.html">HOME</a>
+                <a class="navItem" href="schedule.html">SCHEDULE</a>
+                <a class="navItem" href="about.html">ABOUT</a>
+                <a class="navItem" href="judges.html">JUDGES</a>
+                <button onclick="myShow()" class="menuIcon"><i class="fas fa-bars "></i></button>
+            </nav>
         </div>
 
     </header>
@@ -42,7 +42,7 @@
     <h1 class="title">REWARDS</h1>
     <div class="rewards">
         <div class="prizes">
-            <h1 id="showPrizeButton">1st Prize</h1>
+            <h1 id="showPrizeButton" onclick="showPrize">1st Prize</h1>
             <ul id="prizeList">
                 <li>Lorem, ipsum dolor sit</li>
                 <li>Lorem, ipsum dolor sit</li>
@@ -104,15 +104,17 @@
     <!-- FOOTER END -->
 
     <script src="https://kit.fontawesome.com/c4b7891002.js" crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
     <script>
-        function myShow() {
-            var menuButton = document.getElementById("menuBtn");
-            showPrizeButton.classList.toggle("showMenu");
-        }
-        function showPrize() {
-            prizeList.classList.toggle("showPrize");
-        }
         showPrizeButton.addEventListener('click', showPrize)
+        function showPrize() {
+            var x = document.getElementById("prizeList")
+            if (x.style.visibility = "hidden") {
+                x.style.visibility = "visible"
+            } else if ((x.style.visibility = "visible")) {
+                x.style.visibility = "visible"
+            }
+        }
     </script>
 </body>
 

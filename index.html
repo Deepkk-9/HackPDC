@@ -16,13 +16,13 @@
             <h2>CUBE <span class="headTittlePart">HACKS I</span></h2>
         </div>
         <div class="rightHead">
-            <ul>
-                <li><a style="color: white;" href="index.html">HOME</a></li>
-                <li><a href="schedule.html">SCHEDULE</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="judges.html">JUDGES</a></li>
-                <li><button onclick="myShow()" class="menuIcon"><i class="fas fa-bars "></i></button></li>
-            </ul>
+            <nav>
+                <a class="navItem" style="color: white;" href="index.html">HOME</a>
+                <a class="navItem" href="schedule.html">SCHEDULE</a>
+                <a class="navItem" href="about.html">ABOUT</a>
+                <a class="navItem" href="judges.html">JUDGES</a>
+                <button onclick="myShow()" class="menuIcon"><i class="fas fa-bars "></i></button>
+            </nav>
         </div>
 
     </header>
@@ -39,12 +39,7 @@
     <!-- FOOTER START -->
     <!-- FOOTER END -->
     <script src="https://kit.fontawesome.com/c4b7891002.js" crossorigin="anonymous"></script>
-    <script>
-        function myShow() {
-            var menuButton = document.getElementById("menuBtn");
-            menuButton.classList.toggle("showMenu");
-        }
-    </script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
