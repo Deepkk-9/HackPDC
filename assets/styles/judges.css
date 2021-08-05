@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
-
-*
-{
+* {
     margin: 0%;
     padding: 0%;
 }
 
-.title
-{
-    /* margin-top: 50px; */
+.title {
     text-align: center;
     font-family: 'Monda', sans-serif;
     color: #dfbfff;
@@ -18,9 +14,10 @@
 
 /* Judges page start */
 
+
 /* main contaier */
-.main
-{
+
+.main {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -29,8 +26,8 @@
 
 
 /* cards */
-.cards
-{
+
+.cards {
     position: relative;
     width: 260px;
     height: 250px;
@@ -45,54 +42,54 @@
     transition: all 0.2s ease-out;
 }
 
-.cards .user .img    
-{
+.cards .user .img {
     width: 110px;
     border-radius: 100%;
 }
 
-.cards .jname
-{
+.cards .jname {
     font-family: Monda;
     font-size: 1.7em;
     font-weight: bolder;
     color: white;
 }
-.cards .after
-{
+
+.cards .after {
     display: none;
 }
 
-.cards .icons
-{
+.cards .icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100px;
 }
 
-.cards .icons .linkedin
-{
+.cards .icons .linkedin {
     width: 30px;
+    cursor: pointer;
+}
+
+.cards .icons .mail {
+    width: 30px;
+    cursor: pointer;
 }
 
 
 /* cards hovering effect */
-.cards:hover
-{
+
+.cards:hover {
     height: 300px;
     transition: all 0.2s ease-out;
     padding-top: 50px;
 }
 
-.cards:hover .user
-{
+.cards:hover .user {
     position: absolute;
     top: -50px;
 }
 
-.cards:hover .after
-{
+.cards:hover .after {
     display: block;
     text-align: justify;
     padding: 0px 30px;
@@ -104,47 +101,36 @@
 
 
 /* media query */
-@media only screen and (max-width: 600px) {
 
-    .cards:hover
-    {
+@media only screen and (max-width: 600px) {
+    .cards:hover {
         height: 270px;
     }
-
-    .main
-    {
+    .main {
         height: max-content;
         flex-direction: column;
         justify-content: space-evenly;
     }
-
-    .cards
-    {
+    .cards {
         height: 270px;
         padding-top: 50px;
         margin-top: 80px;
     }
-
-    .cards .user
-    {
+    .cards .user {
         position: absolute;
         top: -50px;
     }
-
-    .cards .after
-    {
+    .cards .after {
         display: block;
         text-align: justify;
-        padding: 0px 20px;
+        padding: 0px 30px;
         font-family: Monda;
         font-style: normal;
         font-size: small;
         color: white;
         height: max-content;
     }
-
-    #dcard
-    {
+    #dcard {
         margin-bottom: 40px;
     }
 }
