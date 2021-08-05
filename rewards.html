@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/assets/styles/style.css" />
     <link rel="stylesheet" href="/assets/styles/rewards.css" />
 
-    <title>Rewards</title>
+    <title>CUBE HACKS | REWARDS</title>
 </head>
 
 <body>
@@ -42,17 +42,19 @@
     <h1 class="title">REWARDS</h1>
     <div class="rewards">
         <div class="prizes">
-            <h1 id="showPrizeButton" onclick="showPrize">1st Prize</h1>
+            <h1 id="showPrizeButton" class="accordionTitle">1st Prize</h1>
             <ul id="prizeList">
                 <li>Lorem, ipsum dolor sit</li>
                 <li>Lorem, ipsum dolor sit</li>
                 <li>Lorem, ipsum dolor sit</li>
                 <li>Lorem, ipsum dolor sit</li>
+
             </ul>
+
         </div>
         <div class="prizes">
-            <h1 id="showPrizeButton">2nd Prize</h1>
-            <ul>
+            <h1 id="showPrizeButton" class="accordionTitle">2nd Prize</h1>
+            <ul id="prizeList">
                 <li>Lorem, ipsum dolor sit</li>
                 <li>Lorem, ipsum dolor sit</li>
                 <li>Lorem, ipsum dolor sit</li>
@@ -61,8 +63,8 @@
 
         </div>
         <div class="prizes">
-            <h1 id="showPrizeButton">3rd Prize</h1>
-            <ul>
+            <h1 id="showPrizeButton" class="accordionTitle">3rd Prize</h1>
+            <ul id="prizeList">
                 <li>Lorem, ipsum dolor sit</li>
                 <li>Lorem, ipsum dolor sit</li>
                 <li>Lorem, ipsum dolor sit</li>
@@ -70,8 +72,8 @@
             </ul>
         </div>
         <div class="prizes">
-            <h1 id="showPrizeButton">Best Beginner</h1>
-            <ul>
+            <h1 id="showPrizeButton" class="accordionTitle">Best Beginner</h1>
+            <ul id="prizeList">
                 <li>Lorem, ipsum dolor sit</li>
                 <li>Lorem, ipsum dolor sit</li>
                 <li>Lorem, ipsum dolor sit</li>
@@ -79,8 +81,8 @@
             </ul>
         </div>
         <div class="prizes">
-            <h1 id="showPrizeButton">Best Solo</h1>
-            <ul>
+            <h1 id="showPrizeButton" class="accordionTitle">Best Solo</h1>
+            <ul id="prizeList">
                 <li>Lorem, ipsum dolor sit</li>
                 <li>Lorem, ipsum dolor sit</li>
                 <li>Lorem, ipsum dolor sit</li>
@@ -88,8 +90,8 @@
             </ul>
         </div>
         <div class="prizes">
-            <h1 id="showPrizeButton">Best Duo</h1>
-            <ul>
+            <h1 id="showPrizeButton" class="accordionTitle">Best Duo</h1>
+            <ul id="prizeList">
                 <li>Lorem, ipsum dolor sit</li>
                 <li>Lorem, ipsum dolor sit</li>
                 <li>Lorem, ipsum dolor sit</li>
@@ -106,15 +108,7 @@
     <script src="https://kit.fontawesome.com/c4b7891002.js" crossorigin="anonymous"></script>
     <script src="assets/js/index.js"></script>
     <script>
-        showPrizeButton.addEventListener('click', showPrize)
-        function showPrize() {
-            var x = document.getElementById("prizeList")
-            if (x.style.visibility = "hidden") {
-                x.style.visibility = "visible"
-            } else if ((x.style.visibility = "visible")) {
-                x.style.visibility = "visible"
-            }
-        }
+
     </script>
 </body>
 
