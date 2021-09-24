@@ -3,38 +3,27 @@
 :root {
   --mainFontColor: #dfbfff;
 }
-
+* {
+  font-family: "Monda", sans-serif;
+}
 body {
   color: var(--mainFontColor);
 }
-.faqpage{
-  font-family: "Monda", sans-serif;
+.faqPage {
   text-align: center;
   color: rgba(223, 191, 255, 1);
   display: grid;
   place-items: center;
   grid-gap: 10px;
+  width: 100vw;
 }
-.faqcontent {
-  width: 50vw;
-}
- h1 {
+.faqPage h1 {
   font-size: 3.6rem;
   text-align: center;
-  font-size: 60px;
-  position: relative;
-}
-.faqpage h1::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 100%;
-  height: 2px;
-  background-color: #9f9dff;
+  font-size: 64px;
 }
 
- div > h2 {
+.faqPage div h2 {
   margin-top: 50px;
   margin-bottom: 20px;
   text-align: center;
@@ -42,8 +31,17 @@ body {
   font-size: 30px;
   font-family: "Monda", sans-serif;
 }
- .faqpage> .faqcontent> div > p {
+
+.faqPage .faq-question-answer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faqPage > div > p {
   color: rgba(146, 183, 255, 1);
   font-size: 20px;
-  text-align: justify;
+  text-align: center;
+  padding: 10px 25%;
 }
