@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
-    <title>CODE HACKS</title>
+    <title>CUBE HACKS</title>
 </head>
 
 <body>
@@ -16,13 +16,13 @@
             <h2>CUBE <span class="headTittlePart">HACKS I</span></h2>
         </div>
         <div class="rightHead">
-            <ul>
-                <li><a style="color: white;" href="index.html">HOME</a></li>
-                <li><a href="schedule.html">SCHEDULE</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="judges.html">JUDGES</a></li>
-                <li><button onclick="myShow()" class="menuIcon"><i class="fas fa-bars "></i></button></li>
-            </ul>
+            <nav>
+                <a class="navItem" style="color: white;" href="index.html">HOME</a>
+                <a class="navItem" href="schedule.html">SCHEDULE</a>
+                <a class="navItem" href="about.html">ABOUT</a>
+                <a class="navItem" href="judges.html">JUDGES</a>
+                <button onclick="myShow()" class="menuIcon"><i class="fas fa-bars "></i></button>
+            </nav>
         </div>
 
     </header>
@@ -36,15 +36,43 @@
     </section>
     <!-- HEADER END -->
 
+    <main class="main">
+        <section class="main-title">
+            <h1>CUBE <span class="blue-shade-text">HACKS I</span></h1>
+        </section>
+        <section class="main-discription">
+            <p><i>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati laboriosam illo minima expedita
+                    quas
+                    odit
+                    minus enim sequi nihil quidem consequatur perferendis cum, ipsam tempore, quasi voluptas! Quia,
+                    beatae
+                    corrupti?
+                </i>
+            </p>
+        </section>
+        <section class="navigation-list-link">
+            <ul>
+                <li>
+                    <a href="#">Register</a>
+                </li>
+                <li>
+                    <a href="https://discord.gg/AY5eaRxMrt">Discord <img src="./assets/Images/Icons/discord.svg"
+                            alt="Discord"></a>
+                </li>
+                <li>
+                    <a href="./faq.html">FAQ</a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
     <!-- FOOTER START -->
     <!-- FOOTER END -->
     <script src="https://kit.fontawesome.com/c4b7891002.js" crossorigin="anonymous"></script>
-    <script>
-        function myShow() {
-            var menuButton = document.getElementById("menuBtn");
-            menuButton.classList.toggle("showMenu");
-        }
-    </script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>

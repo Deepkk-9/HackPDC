@@ -1,102 +1,136 @@
-header
-{
-    color: #dfbfff;
-}
-header li:nth-child(2)
-{
-    color: #dfbfff;
-}
-.main
-{
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    width: 100%;
-    height: max-content;
-    justify-content: space-evenly;
-    align-items: center;
-    top: 25%;    
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
 }
 
-.cards
-{
-    position: relative;
-    width: 250px;
-    height: 320px;
-    border-radius: 12px;
-    padding: 25px;
-    margin-top: 120px;
-    margin-bottom: 50px;
-    background-color: white;    
-}
-
-.title
-{
-    margin-top: 50px;
+.title {
     text-align: center;
     font-family: 'Monda', sans-serif;
-    color: white;
+    color: #dfbfff;
     font-size: 3.5rem;
 }
-.jname
-{
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    font-family: 'Poppins', sans-serif;  
-}
-h3
-{
-    text-align: justify;
+
+
+/* Judges page start */
+
+
+/* main contaier */
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70vh;
 }
 
-.rightc
-{
-    text-align: center;
-    margin-left: 100px;
-    justify-content: center;
+
+/* cards */
+
+.cards {
+    position: relative;
+    width: 260px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(237, 237, 237, 0.29);
+    box-shadow: 8px 6px 4px 2px #3E1581;
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    transition: all 0.2s ease-out;
 }
 
-.leftc
-{
-    text-align: center;
-    margin-right: 100px;
+.cards .user .img {
+    width: 110px;
+    border-radius: 100%;
 }
 
-.user
-{
-    top: -60px;
-    margin-left: 22%;
-    position: absolute;
-    height: 120px;
-    width: 120px;
-    background-image: url("../Images/Judges/userbg.svg");
-    background-size: cover;
+.cards .jname {
+    font-family: Monda;
+    font-size: 1.7em;
+    font-weight: bolder;
+    color: white;
 }
 
-.ul
-{
-    margin-left: 510px;
+.cards .after {
+    display: none;
 }
 
-.ur
-{
-    margin-right: 510px;
+.cards .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
 }
 
-.li
-{
-    width: 20px;
-    height: 15px;
-    margin-left: 115px;
-    margin-top: 10px;
-    background-image: url(lin.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+.cards .icons .linkedin {
+    width: 30px;
     cursor: pointer;
 }
 
-.r
-{
-    align-items: center;
+.cards .icons .mail {
+    width: 30px;
+    cursor: pointer;
+}
+
+
+/* cards hovering effect */
+
+.cards:hover {
+    height: 300px;
+    transition: all 0.2s ease-out;
+    padding-top: 50px;
+}
+
+.cards:hover .user {
+    position: absolute;
+    top: -50px;
+}
+
+.cards:hover .after {
+    display: block;
+    text-align: justify;
+    padding: 0px 30px;
+    font-family: Monda;
+    font-style: normal;
+    font-size: small;
+    color: white;
+}
+
+
+/* media query */
+
+@media only screen and (max-width: 600px) {
+    .cards:hover {
+        height: 270px;
+    }
+    .main {
+        height: max-content;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .cards {
+        height: 270px;
+        padding-top: 50px;
+        margin-top: 80px;
+    }
+    .cards .user {
+        position: absolute;
+        top: -50px;
+    }
+    .cards .after {
+        display: block;
+        text-align: justify;
+        padding: 0px 30px;
+        font-family: Monda;
+        font-style: normal;
+        font-size: small;
+        color: white;
+        height: max-content;
+    }
+    #dcard {
+        margin-bottom: 40px;
+    }
 }

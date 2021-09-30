@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/assets/styles/schedule.css">
     <link rel="stylesheet" href="/assets/styles/style.css" />
 
-    <title>SCHEDULE</title>
+    <title>CUBE HACKS | SCHEDULE</title>
 </head>
 
 <body>
@@ -18,13 +18,13 @@
             <h2>CUBE <span class="headTittlePart">HACKS I</span></h2>
         </div>
         <div class="rightHead">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a style="color: white;" href="schedule.html">SCHEDULE</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="judges.html">JUDGES</a></li>
-                <li><button onclick="myShow()" class="menuIcon"><i class="fas fa-bars "></i></button></li>
-            </ul>
+            <nav>
+                <a class="navItem" href="index.html">HOME</a>
+                <a class="navItem" style="color: white;" href="schedule.html">SCHEDULE</a>
+                <a class="navItem" href="about.html">ABOUT</a>
+                <a class="navItem" href="judges.html">JUDGES</a>
+                <button onclick="myShow()" class="menuIcon"><i class="fas fa-bars "></i></button>
+            </nav>
         </div>
     </header>
     <section class="responsiveMenu" id="menuBtn">
@@ -46,34 +46,8 @@
 
         <div class="container">
             <div class="timeline">
-                <ul>
-                    <li>
-                        <div class="timelineContent">
-                            <h2 class="date">16 June, 2021</h2>
-                            <h1>Machine Learning</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, iure! Sit aut ducimus
-                                reprehenderit, libero impedit dolore, earum, possimus accusamus rem at corrupti</p>
-                            <button class="knowMoreButton">Know More</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timelineContent">
-                            <h2 class="date">08 July, 2021</h2>
-                            <h1>Robotics and AI</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, iure! Sit aut ducimus
-                                reprehenderit, libero impedit dolore, earum, possimus accusamus rem at corrupti</p>
-                            <button class="knowMoreButton">Know More</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timelineContent">
-                            <h2 class="date">08 September, 2021</h2>
-                            <h1>COVID 19</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, iure! Sit aut ducimus
-                                reprehenderit, libero impedit dolore, earum, possimus accusamus rem at corrupti</p>
-                            <button class="knowMoreButton">Know More</button>
-                        </div>
-                    </li>
+                <ul id="timeline">
+                    <!-- Fetched from json file -->
                 </ul>
             </div>
         </div>
@@ -83,11 +57,26 @@
     <!-- FOOTER START -->
     <!-- FOOTER END -->
 
+    <script src="assets/js/index.js"></script>
     <script src="https://kit.fontawesome.com/c4b7891002.js" crossorigin="anonymous"></script>
-    <script>
-        function myShow() {
-            menuBtn.classList.toggle("showMenu");
-        }
+    <script type="text/javascript">
+        fetch("./assets/data/events.json").then(res => res.json())
+            .then(data => {
+
+                data.forEach(element => {
+                    console.log(element);
+                    const { hackathonTitle, hackathonDate, description, hackathonId } = element;
+                    document.getElementById("timeline").innerHTML +=
+                        '<li>\
+                            <div class="timelineContent">\
+                                <h2 class="date">'+ hackathonDate + '</h2>\
+                                <h1>'+ hackathonTitle + '</h1>\
+                                <p>'+ description + '</p>\
+                                <button class="knowMoreButton">Know More</button>\
+                            </div>\
+                        </li>'
+                });
+            })
     </script>
 </body>
 
